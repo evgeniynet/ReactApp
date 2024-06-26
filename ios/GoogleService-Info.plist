@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1087732458417-3jaqo3v361523l2n30k517juh476dauv.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1087732458417-3jaqo3v361523l2n30k517juh476dauv</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDmEXcFpIL7x8BGA2dN__CDwi4DLqGNjc4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1087732458417</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.sherpadesk.mobile.app</string>
+	<key>PROJECT_ID</key>
+	<string>sherpa-desk</string>
+	<key>STORAGE_BUCKET</key>
+	<string>sherpa-desk.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1087732458417:ios:caf8e89eeb36b6e2839390</string>
+</dict>
+</plist>

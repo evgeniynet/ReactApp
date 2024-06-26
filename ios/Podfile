@@ -1,0 +1,39 @@
+require File.join(File.dirname(`node --print "require.resolve('expo/package.json')"`), "scripts/autolinking")
+require_relative '../node_modules/react-native/scripts/react_native_pods'
+require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
+
+platform :ios, '14.0'
+
+target 'SherpaDesk' do
+  use_expo_modules!
+  use_modular_headers!
+  post_integrate do |installer|
+    begin
+      expo_patch_react_imports!(installer)
+    rescue => e
+      Pod::UI.warn e
+    end
+    #installer.pods_project.build_configurations.each do |config|
+    #  config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
+    #end
+  end
+  config = use_native_modules!
+  puts(config["reactNativePath"])
+  use_react_native!(:path => config[:reactNativePath])
+
+  pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
+
+  #pod 'RNCAsyncStorage', :path => '../node_modules/@react-native-community/async-storage'
+
+  pod 'react-native-splash-screen', :path => '../node_modules/react-native-splash-screen'
+    
+  #use_flipper!()
+  #post_install do |installer|
+  #  flipper_post_install(installer)
+  #end
+
+  target 'SherpaDeskTests' do
+    inherit! :complete
+    # Pods for testing
+  end
+end

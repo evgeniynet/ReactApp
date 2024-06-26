@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1087732458417",
+    "project_id": "sherpa-desk",
+    "storage_bucket": "sherpa-desk.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1087732458417:android:c0e53dafbfb36dc4839390",
+        "android_client_info": {
+          "package_name": "com.sherpadesk.mobile.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1087732458417-q5rg185u4kfthgvfl9tcp5gtudsc5f2h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWwpPkO9vZGAZqQtsqXfe9qv8__g06OK0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1087732458417-q5rg185u4kfthgvfl9tcp5gtudsc5f2h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
