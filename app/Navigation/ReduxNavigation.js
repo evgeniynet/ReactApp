@@ -16,6 +16,8 @@ import ApiHelper from '../Components/ApiHelper';
 import CommonFunctions from '../Components/CommonFunctions';
 import NavigationService from '../Components/NavigationService';
 
+import { Linking } from "react-native";
+
 /* Exporting app navigator middleware */
 export const appNavigatorMiddleware = createReactNavigationReduxMiddleware(
   (state) => state.nav,
@@ -83,6 +85,7 @@ class ReduxNavigation extends React.Component {
 
   /* Romving event(BackPress) listener */
   componentWillUnmount() {
+    Linking.removeAllListeners('url');
     if (Platform.OS === 'ios') return
     BackHandler.removeEventListener('hardwareBackPress', undefined)
   }
@@ -91,6 +94,7 @@ class ReduxNavigation extends React.Component {
   /* Setting root of based on user loged in or not */
   fetchUserDataAndSetNavigation = async () => {
     try {
+
       // console.log('fetchUserDataAndSetNavigation ====================================');
       const value = await AsyncStorage.getItem(UserDataKeys.User)
       console.log('fetchUserDataAndSetNavigation ====================================', value);

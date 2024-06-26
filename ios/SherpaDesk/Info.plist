@@ -64,8 +64,6 @@
 	<string>Allow access to use the microphone</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Allow access to use photo library to take document picture.</string>
-	<key>REACT_NATIVE_PATH</key>
-	<string>/Users/eugene1/Desktop/SherpaDesk-ReactNative/SherpaDesk/node_modules/react-native</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Ubuntu-Bold.ttf</string>
